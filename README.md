@@ -1,6 +1,6 @@
 # Lexical-Ambiguity
 
-How to use:
+## How to use:
 
 **python lexical.py**
 
