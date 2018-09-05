@@ -1,6 +1,7 @@
 # Lexical-Ambiguity
 
 How to use:
+
 **python lexical.py**
 
 Implementing the Vector Classification Model
@@ -17,6 +18,7 @@ Enter Option: 1
 Choose file (plant/tank/perplace): plant
 Choose stemmed or unstemmed: stemmed
    sense  predict  sim1-sim2   sim1     sim2    doc#    sense    title
+   
 ================================================================================================================================
 +    1      1       0.2136    0.2593   0.0458   3744  1  LIVING  of drying was observed in the PLANT grown in soil A than that
 +    1      1       0.2127    0.2534   0.0407   3651  1  LIVING  tration at R6 , proportion of PLANT N from fixation , and seed
@@ -436,6 +438,7 @@ Choose stemmed or unstemmed: stemmed
 Choose position weighting (exponential/stepped/custom): exponential
 Include LR adjacency model (yes/no): no
    sense  predict  sim1-sim2   sim1     sim2    doc#    sense    title
+   
 ================================================================================================================================
 +    1      1       0.2107    0.2197   0.0090   3953  1  LIVING  ) are essential nutrients for PLANT growth and development , p
 +    1      1       0.2057    0.2387   0.0329   3792  1  LIVING  ld per plant , internodes and PLANT height were reduced by pla
@@ -850,6 +853,7 @@ An example of the output table is shown bellow.
 ===================================================================================================
    Stemming    |  Position Weighting  |  Local Collocation Modelling  |        Accuracy
                |                      |                               | tank | plant | pers/place
+               
 ===================================================================================================
 1  unstemmed   |  #0-uniform          |  #1-bag-of-words              | 0.93 | 0.92  |    0.77
 2  stemmed     |  #1-expndecay        |  #1-bag-of-words              | 0.94 | 0.92  |    0.81
@@ -877,6 +881,7 @@ Running this part takes approximately 5 min or longer.
 =================================================================================================================
    Model       |  Stemming    |  Position Weighting  |  Local Collocation Modelling  |        Accuracy
                |              |                      |                               | tank | plant | pers/place
+               
 =================================================================================================================
 1  Bayesian    |  unstemmed   |  #0-uniform          |  #1-bag-of-words              | 0.90 | 0.96  |    0.66
 2  KNN         |  unstemmed   |  #1-expndecay        |  #1-bag-of-words              | 0.81 | 0.77  |    0.71
