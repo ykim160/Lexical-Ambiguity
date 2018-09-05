@@ -4,7 +4,7 @@ How to use:
 
 **python lexical.py**
 
-Implementing the Vector Classification Model
+## Implementing the Vector Classification Model
 
 I initialized all the "document" vectors, where each example sentence is its own document.
 I also decided to use TF-IDF as default for all cases except for Naive Bayes classifier. I also stored all the lables indicated
@@ -422,7 +422,7 @@ Choose stemmed or unstemmed: stemmed
 +    2      2      -0.2139    0.0480   0.2619   3779  2  FACTORY l have to make , assuming the PLANT starts operation early nex
 ================================================================================================================================
 
-Variations on the Model
+## Variations on the Model
 
 I set up the weights before entering it to the doc_vectors array by calling a get_weights function and weigh the tokens
 accordingly based on weighting scheme the user chooses. I implemented all three different weighting schemes with default
@@ -845,7 +845,7 @@ Include LR adjacency model (yes/no): no
 plant stemmed Prediction Accuracy: 0.9175
 
 
-Evaluation
+## Evaluation
 
 At the end I just call all the implemented functions from part1-2 for different files and models.
 An example of the output table is shown bellow. 
@@ -863,7 +863,7 @@ An example of the output table is shown bellow.
 6  unstemmed   |  #3-yours            |  #1-bag-of-words              | 0.91 | 0.89  |    0.78
 
 
-Extensions to the Classification Model
+## Extensions to the Classification Model
 
 I implemented three further classification models of Naive Bayesian, K nearest neighbours and hierarchal clustering using sklearn.
 To be able to fit the dictionaries into the sklearn models, I first got all the unique words for the entire doc_vectors.
